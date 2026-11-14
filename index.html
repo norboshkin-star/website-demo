@@ -69,25 +69,30 @@
       }
     }
   </style>
-
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 65px;
+    }
+  </style>
   <body>
     <!-- Navigation -->
     <div class="w3-top">
       <nav class="w3-flex" id="myNavbar">
         <a href="#home" class="w3-button">HOME</a>
 
-        <a href="#aboutme" class="w3-button w3-hide-small">
+        <a href="#ABOUTME" class="w3-button w3-hide-small">
           <i class="fa fa-user"></i> ABOUT ME
         </a>
 
-        <a href="#skills" class="w3-button w3-hide-small">
+        <a href="#SKILLS" class="w3-button w3-hide-small">
           <i class="fa fa-th"></i> SKILLS
         </a>
 
-        <a href="#experience" class="w3-button w3-hide-small">
+        <a href="#EXPERIENCE" class="w3-button w3-hide-small">
           <i class="fa fa-envelope"></i> EXPERIENCE
         </a>
-        <a href="#contactme" class="w3-button w3-hide-small">
+        <a href="#CONTACTME" class="w3-button w3-hide-small">
           <i class="fa fa-envelope"></i> CONTACT ME
         </a>
         <a
@@ -114,28 +119,28 @@
         class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"
       >
         <a
-          href="#about"
+          href="#ABOUTME"
           class="w3-bar-item w3-button"
           onclick="toggleFunction()"
-          >ABOUT</a
+          >ABOUT ME</a
         >
 
         <a
-          href="#skills"
+          href="#SKILLS"
           class="w3-bar-item w3-button"
           onclick="toggleFunction()"
           >SKILLS</a
         >
 
         <a
-          href="#experience"
+          href="#EXPERIENCE"
           class="w3-bar-item w3-button"
           onclick="toggleFunction()"
           >EXPERIENCE</a
         >
 
         <a
-          href="#contactme"
+          href="#CONTACTME"
           class="w3-bar-item w3-button"
           onclick="toggleFunction()"
           >CONTACT ME</a
@@ -157,7 +162,7 @@
     </div>
 
     <!-- About -->
-    <section class="w3-content w3-container w3-padding-64" id="about">
+    <section class="w3-content w3-container w3-padding-64" id="ABOUTME">
       <h3 class="w3-center">ABOUT ME</h3>
 
       <p class="w3-center">
@@ -209,7 +214,9 @@
         </div>
       </div>
 
-      <p class="w3-large w3-center w3-padding-16">I'm really good at:</p>
+      <p id="SKILLS" class="w3-large w3-center w3-padding-16">
+        I'm really good at:
+      </p>
 
       <p class="w3-wide"><i class="fa fa-camera"></i> Attention to Detail</p>
 
@@ -279,14 +286,15 @@
     </div>
 
     <!-- Experience -->
-    <section class="w3-content w3-container w3-padding-64" id="portfolio">
-      <h3 class="w3-center">MY EXPERIENCE</h3>
+    <section
+      id="EXPERIENCE"
+      class="w3-content w3-container w3-padding-64"
+      id="portfolio"
+    >
+      <h3 class="w3-center">EXPERIENCE</h3>
 
       <p class="w3-center">
-        <em>
-          Here are some of my latest experiences.<br />
-          Click on the images to see my responsibilities.
-        </em>
+        <em> Here are some of my latest experiences.<br /> </em>
       </p>
 
       <div
@@ -327,47 +335,8 @@
           class="w3-hover-opacity"
           alt="Quiet ocean"
         />
-
-        <img
-          src="download.png"
-          style="width: 100%"
-          onclick="onClick(this)"
-          class="w3-hover-opacity"
-          alt="The mist"
-        />
-
-        <img
-          src="/w3images/p6.jpg"
-          style="width: 100%"
-          onclick="onClick(this)"
-          class="w3-hover-opacity"
-          alt="My beloved typewriter"
-        />
-
-        <img
-          src="/w3images/p7.jpg"
-          style="width: 100%"
-          onclick="onClick(this)"
-          class="w3-hover-opacity"
-          alt="Empty ghost train"
-        />
-
-        <img
-          src="/w3images/p8.jpg"
-          style="width: 100%"
-          onclick="onClick(this)"
-          class="w3-hover-opacity"
-          alt="Sailing"
-        />
       </div>
-
-      <p class="w3-center">
-        <button class="w3-button w3-padding-large w3-light-grey">
-          LOAD MORE
-        </button>
-      </p>
     </section>
-
     <!-- Image Modal -->
     <div
       id="modal01"
@@ -398,8 +367,8 @@
     </div>
 
     <!-- Contact -->
-    <section class="w3-content w3-container w3-padding-64" id="contact">
-      <h3 class="w3-center">WHERE I WORK</h3>
+    <section id="CONTACTME" class="w3-content w3-container w3-padding-64">
+      <h3 class="w3-center">CONTACT ME</h3>
 
       <p class="w3-center">
         <em>I'd love your feedback!</em>
@@ -491,12 +460,15 @@
       </a>
 
       <div class="w3-xlarge w3-section">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <a href="https://www.facebook.com/tanukha/" target="_blank">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        </a>
+        <a href="https://www.instagram.com/norboshkin/" target="_blank">
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/tatianasambueva/" target="_blank">
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </a>
       </div>
 
       <p>
